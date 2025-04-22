@@ -1,0 +1,147 @@
+---
+title: confetti-button
+description: This button is an example of how to create a component in the library.
+date: 2024-06-10
+published: true
+---
+
+# Confetti Button
+
+## See the component in the preview
+
+You need to use the ***ComponentPreview*** component, only need to pass the name of the component as a prop.
+
+<ComponentPreview name="component-example" />
+
+### See the code of the component
+
+Using the ***CodeBlockWrapper*** component, only need to pass the code as a children, this component wrapper has a prop called size, this prop is used to set the a show more button, the possible values are: "full" and "wrapper"
+
+Here is the code of the component using the CodeBlockWrapper on full size:
+
+<CodeBlockWrapper size="full">
+```tsx
+"use client";
+
+import React from "react";
+import confetti from "canvas-confetti";
+
+const ComponentExample = () => {
+  const handleClick = () => {
+    confetti();
+  };
+
+  return (
+    <button className="border rounded-md px-4 py-2" onClick={handleClick}>
+      Click me
+    </button>
+  );
+};
+
+export default ComponentExample;
+```
+</CodeBlockWrapper>
+
+Here is the code of the component using the CodeBlockWrapper on wrapper size, only to show large code blocks:
+
+<CodeBlockWrapper size="wrapper">
+```tsx
+"use client";
+
+import React from "react";
+import confetti from "canvas-confetti";
+
+const ComponentExample = () => {
+  const handleClick = () => {
+    confetti();
+  };
+
+  return (
+    <button className="border rounded-md px-4 py-2" onClick={handleClick}>
+      Click me
+    </button>
+  );
+};
+
+export default ComponentExample;
+```
+</CodeBlockWrapper>
+
+### Show the component code and highlight especific lines
+
+You can show the component code and highlight specific lines, only need to pass the line number  on the code block
+
+
+
+<CodeBlockWrapper size="full">
+```tsx {3-4} {6,18} {13}
+"use client";
+
+import React from "react";
+import confetti from "canvas-confetti";
+
+const ComponentExample = () => {
+  const handleClick = () => {
+    confetti();
+  };
+
+  return (
+    <button className="border rounded-md px-4 py-2" onClick={handleClick}>
+      Click me
+    </button>
+  );
+};
+
+export default ComponentExample;
+```
+</CodeBlockWrapper>
+
+### You can show the component code and add line numbers
+
+<CodeBlockWrapper size="full">
+```tsx showLineNumbers
+"use client";
+
+import React from "react";
+import confetti from "canvas-confetti";
+
+const ComponentExample = () => {
+  const handleClick = () => {
+    confetti();
+  };
+
+  return (
+    <button className="border rounded-md px-4 py-2" onClick={handleClick}>
+      Click me
+    </button>
+  );
+};
+
+export default ComponentExample;
+```
+</CodeBlockWrapper>
+
+### You can highlight words in the code
+
+<CodeBlockWrapper size="full">
+```tsx ["ComponentExample", "button"]
+"use client";
+
+import React from "react";
+import confetti from "canvas-confetti";
+
+const ComponentExample = () => {
+  const handleClick = () => {
+    confetti();
+  };
+
+  return (
+    <button className="border rounded-md px-4 py-2" onClick={handleClick}>
+      Click me
+    </button>
+  );
+};
+
+export default ComponentExample;
+```
+</CodeBlockWrapper>
