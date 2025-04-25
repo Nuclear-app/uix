@@ -14,6 +14,11 @@ export const siteConfig = {
       path: "/docs",
       new: false,
     },
+    {
+      title: "Nuclear Logo",
+      path: "/content/docs/logo-design.mdx"
+      new: true,
+    }
   ],
   components: [
     {
