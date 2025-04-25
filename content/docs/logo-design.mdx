@@ -5,6 +5,9 @@ date: 2025-04-25
 published: true
 ---
 
+import logoLight from '../library/logos/logo-light-preview.png'
+import logoDark  from '../library/logos/logo-dark-preview.png'
+
 # **Nuclear Logo**
 *Documentation of ideation behind the logo*
 
@@ -12,9 +15,21 @@ published: true
 
 **Nuclear Logo Preview:**
 
-<div style="display: flex; gap: 50px;">
-<img src="../library/logos/logo-light-preview.png" alt="light logo of nuclear" style="width: 200px; height: 200px; border-radius:10px;" />
-<img src="../library/logos/logo-dark-preview.png" alt="dark logo of nuclear" style="width: 200px; height: 200px; border-radius:10px;" />
+<div style={{ display: 'flex', gap: '50px' }}>
+  <img
+    src={logoLight}
+    alt="light logo of nuclear"
+    width={200}
+    height={200}
+    style={{ borderRadius: '8px' }}
+  />
+  <img
+    src={logoDark}
+    alt="dark logo of nuclear"
+    width={200}
+    height={200}
+    style={{ borderRadius: '8px' }}
+  />
 </div>
 
 <br />
