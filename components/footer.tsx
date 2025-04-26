@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-md:px-4 md:container h-12 flex justify-start items-center">
         <div className="flex gap-3 items-center justify-end">
           <Link
-            href={siteConfig.links.twitter}
+            href={siteConfig.links.mainSite}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -18,7 +18,7 @@ export function Footer() {
               className="flex gap-1 items-center px-0 text-muted-foreground hover:text-foreground hover:no-underline"
             >
               Building in public by{" "}
-              <span className="font-semibold">Gonzalo Chalé</span>
+              <span className="font-semibold">The Nuclear team :)</span>
             </Button>
           </Link>
         </div>

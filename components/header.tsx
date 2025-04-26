@@ -25,10 +25,9 @@ export function Header() {
         <nav className="max-md:hidden flex gap-10 w-full items-center">
           <Link href="/" className="flex gap-3 items-center">
             <h1 className="text-lg font-medium tracking-tighter flex gap-1 items-center">
-              Your UI Library
+              NuclearUI
             </h1>
             <Badge variant="outline" className="text-normal">
-              Beta
             </Badge>
           </Link>
           <div className="flex gap-10 items-center">
@@ -59,22 +58,6 @@ export function Header() {
           </div>
         </nav>
         <div className="flex gap-3 items-center justify-end">
-          <Link
-            href={siteConfig.links.twitter}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Follow on Twitter"
-          >
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex gap-3 items-center max-md:h-9 max-md:w-9 max-md:px-0"
-              aria-label="Follow on Twitter"
-            >
-              <span className="hidden md:block">Follow on</span>{" "}
-              <Icons.twitter />
-            </Button>
-          </Link>
           <Link
             href={siteConfig.links.github}
             target="_blank"
