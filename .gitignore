@@ -38,3 +38,7 @@ next-env.d.ts
 
 # velite files
 .velite
+
+
+# test
+/app/test
